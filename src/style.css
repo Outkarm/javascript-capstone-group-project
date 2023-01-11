@@ -1,1 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+body {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  gap: 200px;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 32px;
+  position: fixed;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 30px;
+  color: rgb(14, 13, 13);
+}
+
+.logo a {
+  display: block;
+  font-weight: bold;
+  margin-left: 100px;
+  color: rgb(14, 13, 13);
+  text-decoration: none;
+}
+
+.my-meals {
+  text-decoration: underline;
+}
+
+.borderbox {
+  width: 100%;
+  border: 3px solid black;
+  padding: 2.5%;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 95%;
+}
+
+.footerText {
+  font-family: Roboto, sans-serif;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.endblackbox {
+  /* margin-top: 0; */
+  background-color: grey;
+  height: 2rem;
+}
+
+section {
+  height: auto;
+  padding-top: 40px;
+}
+
+.meal-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px 200px;
+  padding: 30px;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-heart:active {
+  background: red;
+}
