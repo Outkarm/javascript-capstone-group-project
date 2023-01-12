@@ -1,32 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
-body {
+* {
   box-sizing: border-box;
   padding: 0;
-  border: 0;
+  margin: 0;
+}
+
+body {
+  height: 99.4vh;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
   display: flex;
-  font-family: 'Roboto', sans-serif;
-  gap: 200px;
-  width: 100%;
-  margin-top: 15px;
-  font-size: 32px;
-  position: fixed;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border: 2px solid black;
+  font-size: 2rem;
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav a {
   text-decoration: none;
-  padding: 10px 30px;
   color: rgb(14, 13, 13);
 }
 
 .logo a {
-  display: block;
   font-weight: bold;
-  margin-left: 100px;
+
   color: rgb(14, 13, 13);
   text-decoration: none;
 }
@@ -42,9 +53,6 @@ nav a {
 }
 
 .footer {
-  left: 0;
-  bottom: 0;
-  width: 95%;
 }
 
 .footerText {
@@ -59,18 +67,49 @@ nav a {
   height: 2rem;
 }
 
-section {
-  height: auto;
-  padding-top: 40px;
+.meal-info {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.meal-info {
+.the-meal {
+  width: 350px;
+  height: 450px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  margin: 50px 200px;
-  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
+
+.the-meal-img {
+  height: 75%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.the-meal-name {
+  font-size: 2rem;
+}
+
+.like-comment-cont {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.like-cont {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .like-button {
@@ -80,5 +119,9 @@ section {
 }
 
 .fa-heart:active {
-  background: red;
+  color: red;
+}
+
+.pop-up {
+  display: none;
 }
