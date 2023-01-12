@@ -10,5 +10,13 @@ import keyfunction from "./modules/api_key.js";
 
 // CONTAINER FOR MEALS
 
-const mealsContainer = document.querySelector(".meal-info");
+const mealsContainer = document.querySelector('.meal-info');
 showMeal(mealsContainer);
+
+const likeButtons = document.querySelectorAll(".like");
+likeButtons.forEach((likeButton) => {
+  likeButton.addEventListener("click", (event) => {
+    const mealId = event.target.parentNode.parentNode.parentNode.id;
+    addlike(mealId);
+  });
+});
