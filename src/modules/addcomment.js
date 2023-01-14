@@ -63,6 +63,9 @@ const commentSec = async (meal) => {
     comments.append(commentTxt);
     message.value = '';
     Name.value = '';
+    let tmp = commCount;
+    tmp += 1;
+    cC.innerText = `   (${tmp})`;
   });
   commentList.forEach((e) => {
     const commentTxt = document.createElement('p');
