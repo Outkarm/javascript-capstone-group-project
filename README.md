@@ -1,78 +1,146 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# JavaScript Capstone Project
+<div align="center">
 
-> In this project, we built a meals website that uses an externl API to display items and details.
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-## Built With
+</div>
 
-- HTML
-- CSS
-- Javascript
-- Webpack
-- APIs
+<!-- TABLE OF CONTENTS -->
 
-## Live Demo (if available)
+# 📗 Table of Contents
 
-[Live Demo Link 🚀](https:///Outkarm.github.io/javascript-capstone-group-project/dist/index.html)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Todo List Project](#-Javascript-project)
+  - [🛠 Built With ](#-built-with-)
 
-## Getting Started
+  - [🚀 Live Demo video ](https://youtu.be/sgqM34DgA4Q)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
 
-To get a local copy up and running follow these simple steps.
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 Javascript Capstone<a name="about-project"></a>
+
+**javascript Capstone** 
+The JavaScript capstone project  is about building your own web application based on an external API. We select an API (The pokemon api) that provides data about our selected api and we build  the webapp around it. The webapp have 3 user interfaces.
+
+
+## 🛠 Built With <a name="built-with"></a>
+    HTML
+    CSS
+    Javascript(ES6)
+    Webpack
+    AAA patern
+    jest Tests
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+
+
+ - [Live Demo project](https://outkarm.github.io/javascript-capstone-group-project/dist/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+- Create a local directory that you want to clone the repository.
+
+- Open the command prompt in the created directory.
+
+- On the terminal run this command git clone ``
+
+- Go to the repository folder using command prompt cd `
+javascript-capstone-group-project`
+
+- Install the dev dependencies for linters run npm install.
+- setup Webpack
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Prerequisites
 
-To understand the project you must have a basic knowledge about HTML, CSS, Javascript, Webpack and APIs.
+In order to run this project you need:
+
+-Any broswer
+- knowledge of ES6 modules
+- familiarity with basic git commands
+- working knowledge of webpack
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Setup
 
-To run this project one must have Visual Studio (VS) Code installed and running.
+Clone this repository to your desired folder:
 
-### Usage
+- Open the command prompt in the created directory.
 
-Clone and access the repository using the following commands on Git Bash:
+- On the terminal run this command git clone git@github.com:Outkarm/javascript-capstone-group-project.git
 
-cd PATH
-git clone https://github.com/Outkarm/javascript-capstone-group-project.git
-cd javascript-capstone-group-project
-npm install
-npm run build
-npm start
+- Go to the repository folder using command prompt cd awesome-books-project
 
-Open the directory in visual studio code by typing the following command in Git Bash:
+- Install the dev dependencies for linters run npm install.
 
-code .
 
-## Authors
 
-👤 John Kpordje
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- GitHub: [@Outkarm](https://github.com/Outkarm)
-- Twitter: [@Outkarm](https://github.com/Outkarm)
-- LinkedIn: [John Kpordje](https://www.linkedin.com/in/john-kpordje-866749241/https://www.linkedin.com/in/john-kpordje-866749241//)
+<!-- Author -->
 
-👤 Kelvin Kaviku
+👤 **Authors**
+ 
+ - Student A
+ 
+- GitHub: [@Kelvin Kaviku](https://github.com/brainskev)
+- LinkedIn:  [Kelvin Kaviku](https://www.linkedin.com/in/kelvin-kaviku-5178001a6)
+ 
+ - Student B
+   
+- GitHub: [@John Kpordje](https://github.com/Outkarm)
+- LinkedIn:  [John Kpordje](https://www.linkedin.com/in/john-kpordje-866749241/)
 
-- GitHub: [@brainskev](https://github.com/brainskev/)
-- Twitter: [@kelvin_ngotho](https://twitter.com/kevin_ngotho?s=09/)
-- LinkedIn: [kelvin](https://www.linkedin.com/in/kelvin-kaviku-5178001a6/
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Contributing
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- Implement some UX improvements: added transitions and/or animation.
+
+- Implement additional pages.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Outkarm/javascript-capstone-group-project/issues/).
+Feel free to check the [issues page](https://github.com/Outkarm/javascript-capstone-group-project/issues).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐ if you like this project!
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
-- Hat tip to anyone whose code was used
-- Hat tip to [Font Awesome](https://fontawesome.com) for icons
-- Hat tip to [Google APIs](https://fonts.googleapis.com) for fonts
+Give a ⭐️ if you like this project!
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This project is [MIT](./LICENSE) licensed.
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
