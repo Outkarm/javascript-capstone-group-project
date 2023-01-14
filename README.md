@@ -101,12 +101,12 @@ Clone this repository to your desired folder:
 
 👤 **Authors**
  
- - Student A
+  Student A
  
 - GitHub: [@Kelvin Kaviku](https://github.com/brainskev)
 - LinkedIn:  [Kelvin Kaviku](https://www.linkedin.com/in/kelvin-kaviku-5178001a6)
  
- - Student B
+  Student B
    
 - GitHub: [@John Kpordje](https://github.com/Outkarm)
 - LinkedIn:  [John Kpordje](https://www.linkedin.com/in/john-kpordje-866749241/)
