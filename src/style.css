@@ -1,1 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 99.4vh;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border: 2px solid black;
+  font-size: 2rem;
+}
+
+nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(14, 13, 13);
+}
+
+.logo a {
+  font-weight: bold;
+  color: rgb(14, 13, 13);
+  text-decoration: none;
+}
+
+.my-meals {
+  text-decoration: underline;
+}
+
+.borderbox {
+  width: 100%;
+  border: 3px solid black;
+  padding: 2.5%;
+}
+
+.footerText {
+  font-family: Roboto, sans-serif;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.endblackbox {
+  /* margin-top: 0; */
+  background-color: grey;
+  height: 2rem;
+}
+
+.meal-info {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.the-meal {
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
+
+.the-meal-img {
+  height: 75%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.the-meal-name {
+  font-size: 2rem;
+}
+
+.like-comment-cont {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.like-cont {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-heart:active {
+  color: red;
+}
+
+.pop-up {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  height: 100vh;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  width: 100vw;
+}
+
+.comment-pop-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 85%;
+  background-color: blueviolet;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.closebutton {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  border: 4px solid aliceblue;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.com-sec-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.com-sec-m-name {
+  font-size: 3rem;
+  font-weight: 900;
+  color: aliceblue;
+}
+
+.comment-area {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.comment-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+
+.name {
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px;
+}
+
+.message {
+  height: 180px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px;
+}
+
+.comments {
+  height: 230px;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.submit {
+  width: 90%;
+  height: 40px;
+  background-color: chartreuse;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 900;
+  color: aliceblue;
+}
