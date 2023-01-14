@@ -1,5 +1,4 @@
-import { getLikes } from './fetchlike.js';
-import { addLike } from './fetchlike.js';
+import { getLikes, addLike } from './fetchlike.js';
 
 let liked = false;
 const seeLikes = async (btn, txt, food) => {

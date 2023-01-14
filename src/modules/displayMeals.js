@@ -10,15 +10,15 @@ const showMeal = async (container) => {
     .then((data) => {
       if (data.meals) {
         data.meals.forEach((meal) => {
-          let id = meal.idMeal;
-          const theMeal = document.createElement("div");
+          const id = meal.idMeal;
+          const theMeal = document.createElement('div');
           theMeal.id = meal.idMeal;
-          theMeal.classList.add("the-meal");
+          theMeal.classList.add('the-meal');
           container.append(theMeal);
-          const theMealImg = document.createElement("img");
+          const theMealImg = document.createElement('img');
           theMealImg.id = meal.idMeal;
           theMealImg.src = meal.strMealThumb;
-          theMealImg.alt = "Dish";
+          theMealImg.alt = 'Dish';
           theMealImg.classList.add('the-meal-img');
           theMeal.append(theMealImg);
           const theMealName = document.createElement('p');
@@ -54,6 +54,7 @@ const showMeal = async (container) => {
         });
       }
     });
+  return response;
 };
 
 export { showMeal as default };
