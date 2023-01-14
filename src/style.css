@@ -1,3 +1,5 @@
+styles.css
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
@@ -123,5 +125,105 @@ nav a {
 }
 
 .pop-up {
-  display: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+
+  height: 100vh;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  width: 100vw;
+}
+
+.comment-pop-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 85%;
+  background-color: blueviolet;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.closebutton {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  border: 4px solid aliceblue;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.com-sec-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.com-sec-m-name {
+  font-size: 3rem;
+  font-weight: 900;
+  color: aliceblue;
+}
+
+.comment-area {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.comment-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+
+.name {
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px;
+}
+
+.message {
+  height: 180px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px;
+}
+
+.comments {
+  height: 230px;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.submit {
+  width: 90%;
+  height: 40px;
+  background-color: chartreuse;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 900;
+  color: aliceblue;
 }
