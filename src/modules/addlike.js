@@ -1,27 +1,29 @@
-const addlike = (mealId) => {
-  // get the current like count
-  const likeCount = document.querySelector(`#meal-${mealId} .like-count`);
-  let count = parseInt(likeCount.innerText, 10);
+import { getLikes } from './fetchlike.js';
+import { addLike } from './fetchlike.js';
 
-  // increment the like count by 1
-  count += 1;
-  likeCount.innerText = count;
-
-  // send a POST request to the server to update the number of likes
-  fetch(`https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${mealId}/likes`, {
-    method: 'POST',
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-    body: JSON.stringify({ likes: count }),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    })
-    .catch((error) => {
-      console.error(`Error adding like: ${error}`);
+let liked = false;
+const seeLikes = async (btn, txt, food) => {
+  const theLikes = await getLikes();
+  theLikes.forEach((e) => {
+    if (btn.id === e.item_id) {
+      txt.innerText = e.likes;
+    }
+    btn.addEventListener('click', () => {
+      if (food.id === e.item_id) {
+        if (liked === false) {
+          e.likes += 1;
+          txt.innerText = e.likes;
+          liked = true;
+        } else {
+          e.likes -= 1;
+          txt.innerText = e.likes;
+          liked = false;
+        }
+        e.likes = Math.floor(txt.innerText);
+        addLike(e.item_id, e.likes);
+      }
     });
+  });
 };
 
-export default addlike;
+export { seeLikes as default };
