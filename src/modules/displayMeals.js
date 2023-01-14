@@ -1,8 +1,10 @@
-import commentSec from "./addcomment.js";
+import commentSec from './addcomment.js';
+import seeLikes from './addlike.js';
 
+let foodNum = 0;
 const showMeal = async (container) => {
   const response = await fetch(
-    "https://www.themealdb.com/api/json/v1/1/search.php?s="
+    'https://www.themealdb.com/api/json/v1/1/search.php?s=',
   )
     .then((response) => response.json())
     .then((data) => {
@@ -17,33 +19,36 @@ const showMeal = async (container) => {
           theMealImg.id = meal.idMeal;
           theMealImg.src = meal.strMealThumb;
           theMealImg.alt = "Dish";
-          theMealImg.classList.add("the-meal-img");
+          theMealImg.classList.add('the-meal-img');
           theMeal.append(theMealImg);
-          const theMealName = document.createElement("p");
+          const theMealName = document.createElement('p');
           theMealName.innerText = meal.strMeal;
           theMealName.id = meal.idMeal;
-          theMealName.classList.add("the-meal-name");
+          theMealName.classList.add('the-meal-name');
           theMeal.append(theMealName);
-          const likeCommentCont = document.createElement("div");
-          likeCommentCont.classList.add("like-comment-cont");
+          const likeCommentCont = document.createElement('div');
+          likeCommentCont.classList.add('like-comment-cont');
           theMeal.append(likeCommentCont);
-          const likeCont = document.createElement("div");
-          likeCont.classList.add("like-cont");
+          const likeCont = document.createElement('div');
+          foodNum += 1;
+          likeCont.classList.add('like-cont');
           likeCommentCont.append(likeCont);
-          const like = document.createElement("i");
-          like.classList.add("fa-regular", "fa-heart", "like");
+          const like = document.createElement('i');
+          like.classList.add('fa-regular', 'fa-heart', 'like');
+          like.id = id;
           likeCont.append(like);
-          const countLike = document.createElement("span");
-          countLike.innerText = 3;
+          const countLike = document.createElement('span');
+          seeLikes(like, countLike, theMeal);
           likeCont.append(countLike);
-          const commentBtn = document.createElement("button");
-          commentBtn.innerText = "Comment";
+          const commentBtn = document.createElement('button');
+          commentBtn.innerText = 'Comment';
+          const numF = document.querySelector('.meal-count');
+          numF.innerText = `(${foodNum})`;
           commentBtn.id = meal.idMeal;
           likeCommentCont.append(commentBtn);
-          const popup = document.querySelector(".pop-up");
-          commentBtn.addEventListener("click", (meal, popup) => {
+          commentBtn.addEventListener('click', () => {
             if (id === commentBtn.id) {
-              commentSec(meal, popup);
+              commentSec(meal);
             }
           });
         });
