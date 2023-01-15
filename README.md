@@ -43,10 +43,6 @@ The JavaScript capstone project  is about building your own web application base
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-
  - [Live Demo project](https://outkarm.github.io/javascript-capstone-group-project/dist/)
 
 
@@ -101,12 +97,12 @@ Clone this repository to your desired folder:
 
 👤 **Authors**
  
- - Student A
+  Student A
  
 - GitHub: [@Kelvin Kaviku](https://github.com/brainskev)
 - LinkedIn:  [Kelvin Kaviku](https://www.linkedin.com/in/kelvin-kaviku-5178001a6)
  
- - Student B
+  Student B
    
 - GitHub: [@John Kpordje](https://github.com/Outkarm)
 - LinkedIn:  [John Kpordje](https://www.linkedin.com/in/john-kpordje-866749241/)
