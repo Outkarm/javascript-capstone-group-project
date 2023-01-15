@@ -15,4 +15,4 @@ const commentNum = async () => {
   return response;
 };
 
-commentNum();
+export { commentNum as default };
