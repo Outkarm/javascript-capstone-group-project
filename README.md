@@ -43,10 +43,6 @@ The JavaScript capstone project  is about building your own web application base
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
- 
  - [Live Demo project](https://outkarm.github.io/javascript-capstone-group-project/dist/)
 
 
