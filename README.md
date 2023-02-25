@@ -29,7 +29,7 @@
 # 📖 Javascript Capstone<a name="about-project"></a>
 
 **javascript Capstone** 
-The JavaScript capstone project  is about building your own web application based on an external API. We select an API (The pokemon api) that provides data about our selected api and we build  the webapp around it. The webapp have 3 user interfaces.
+The JavaScript capstone project  is about building your own web application based on an external API. We select an API (The Meals api) that provides data about our selected api and we build  the webapp around it. The webapp have 3 user interfaces.
 
 
 ## 🛠 Built With <a name="built-with"></a>
